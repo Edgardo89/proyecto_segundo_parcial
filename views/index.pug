@@ -1,0 +1,17 @@
+extends base.pug
+
+block title 
+    title Inventario de productos
+
+block container
+    h2 Inventario de Productos
+        .container.mt-5(style={width: "350px"})
+            .d-grid.gap-2.mt-1
+                        a.btn.btn-success(href="/registerCategory") Registrar Categorias
+
+            .d-grid.gap-2.mt-1
+                        a.btn.btn-success(href="/registerProduct") Registrar Productos
+
+            .d-grid.gap-2.mt-1
+                        a.btn.btn-success(href="/inventarioCate") Inventario Categorias
+

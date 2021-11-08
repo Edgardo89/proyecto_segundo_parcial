@@ -1,0 +1,25 @@
+extends base.pug
+
+block title 
+    title Registro de Categorias 
+
+block container
+    .container.mt-5(style={width: "350px"}) 
+        h1 Registro de categorias
+        hr
+        form(action="/registerCategory" method="post")
+            .form-group
+                label(for="nombre") Nombre de Categoria
+                input#nombre.form-control(type="text" name="nombre")
+
+            .form-group.mt-3
+                label(for="descripcion") Descripcion
+                input#descripcion.form-control(type="text" name="descripcion" style={height: '98px'})
+
+
+            .form-group.mt-3
+                .d-grid.gap-2
+                    button.btn.btn-primary Guardar 
+
+                .d-grid.gap-2.mt-1
+                    a.btn.btn-success(href="/") Inicio
